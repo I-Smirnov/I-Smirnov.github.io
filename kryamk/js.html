@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Джави</title>
+	<!-- <link rel="stylesheet" href="css/js.css"> -->
+	<!-- <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script> -->
+	<div><label for=""><span>example</span></label></div>
+	
+	<style>
+			div{
+			color: white;
+			}
+
+			.main {
+			width: 1000px;
+			height: 1000px;
+			background: grey;
+			position: static;
+			z-index: 0;
+			top: 200px;
+			left: 200px;
+
+			
+			}
+
+			.yellow {
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				position: fixed;
+				top: 20px;
+				z-index: 2;
+				left: 20px;
+			}
+
+			.blue {
+			background: blue;
+			width: 100px;
+			height: 100px;
+			box-shadow: 20px 20px 20px #353433;
+			position: relative;
+			top: -80px;
+			z-index: 1;
+			margin: 0 auto;
+			
+			
+			}
+			.green {
+			background: green;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			/*left: 900px;*/
+			top: -100px;
+			box-shadow: -20px 20px 20px #353433;
+			z-index: 3
+			}
+
+			
+
+			.yellow:hover ~ .green {
+				background: blue
+			}
+
+			.blue:hover ~ .green {
+				background: blue
+			}
+
+			.yellow:hover + .blue {
+				background: green;
+			}
+			
+			.green:active {
+				display: none;
+			}
+
+			.blue:hover {
+				background: green;
+			}
+
+
+			.main:hover {
+				color: yellow;
+			}
+			h1 {
+    font-size: 28px;
+    font-family: Monaco, Courier, monospace;
+    color: #618ad2;
+    transition: color .5s;
+}
+
+	</style>
+</head>
+<body>
+	<a href="index.html">Home</a>
+	<!-- <input id="val1" type="number"><br><br>
+	<input id="val2" type="number"><br>
+	<br><br>
+	<button>Посчитать</button> -->
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio eveniet sed iusto eligendi quia atque veritatis non impedit, accusantium facilis?
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, fuga cumque nesciunt id commodi recusandae illum iste delectus. At enim earum temporibus quibusdam ex eveniet nemo, saepe voluptates consequatur quam itaque nam placeat rerum repellat, molestias, aut quas fugiat rem explicabo dolorum error incidunt! Perspiciatis est magnam atque, sapiente reiciendis id ipsum, corrupti, in nostrum dolorum cum excepturi nobis impedit. Placeat inventore eaque architecto? Omnis repellat ad fugiat, autem saepe atque excepturi? Ipsum commodi atque numquam illo non, exercitationem nulla?
+		<div class="yellow"></div>
+		<div class="blue">push on blue</div>
+		<div class="green">push on green</div>
+	</div>
+	<h1>Hellol!</h1>
+	<script src="script/script.js"></script>
+	<!-- <script>
+		var heading = document.querySelector('h1');
+
+setInterval(function() {
+  var hue = 'rgb(' + (Math.floor(Math.random() * 256)) +
+    ',' +
+    (Math.floor(Math.random() * 256)) +
+    ',' +
+    (Math.floor(Math.random() * 256)) + ')';
+
+  heading.style.color = hue;
+}, 1000);
+	</script> -->
+</body>
+</html>

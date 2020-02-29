@@ -1,0 +1,94 @@
+.menu [type="checkbox"],
+.menu label.toggleSubmenu {
+display: none;
+}
+.menu label.toggleMenu {
+	background: rgba(245,246,249,1);
+background: -moz-linear-gradient(top, rgba(245,246,249,1) 0%, rgba(185,170,224,1) 89%, rgba(185,170,224,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,246,249,1)), color-stop(89%, rgba(185,170,224,1)), color-stop(100%, rgba(185,170,224,1)));
+background: -webkit-linear-gradient(top, rgba(245,246,249,1) 0%, rgba(185,170,224,1) 89%, rgba(185,170,224,1) 100%);
+background: -o-linear-gradient(top, rgba(245,246,249,1) 0%, rgba(185,170,224,1) 89%, rgba(185,170,224,1) 100%);
+background: -ms-linear-gradient(top, rgba(245,246,249,1) 0%, rgba(185,170,224,1) 89%, rgba(185,170,224,1) 100%);
+background: linear-gradient(to bottom, rgba(245,246,249,1) 0%, rgba(185,170,224,1) 89%, rgba(185,170,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#b9aae0', GradientType=0 );
+	display: none;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-size: 18px;
+	cursor: pointer;
+	position: relative;
+}
+.menu label.toggleMenu .fa {
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	font-size: 18px;
+}
+
+
+
+
+
+@media all and (max-width: 800px){
+	.menu {
+	overflow: hidden;
+	}
+	.menu ul {
+	display: block;
+	max-height: 0;
+	transition: max-height 0.3s;
+	}
+	/*.menu li > ul li ul{
+		position: absolute;
+		top: auto;
+		right: auto;
+	}*/
+	
+	.menu label.toggleMenu{
+		display: block;
+	} 
+	input.toggleMenu:checked + label.toggleMenu {
+		background: navy;
+		color: yellow;
+	}
+	input.toggleMenu:checked ~ ul,
+	input.toggleSubmenu:checked ~ ul {
+		display: block;
+		position: relative;
+		left: 5px;
+		max-height: 5000px;
+		transition: max-height 2s ease-in;
+
+
+	}
+	.menu label.toggleSubmenu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block;
+
+	}
+	input.toggleSubmenu:checked ~ a{
+		background: navy;
+		color: white;
+	}
+	.menu label.toggleSubmenu .fa:before{
+		content: "\f0d7";
+		color: #454547;
+	}
+	.menu label.toggleSubmenu .fa{
+		position: absolute;
+		top: 15px;
+		right: 30px;
+	}
+	.menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+		content: "\f0d8";
+		color: white;
+	}
+	.fa-angle-right {
+		display: none;
+	}	
+}
