@@ -1,0 +1,32 @@
+
+table {
+	background: #FFEBF5;
+	margin: 0 auto;
+}
+thead td {
+	font-size: 20px;
+}
+
+
+td {
+	width: 100px;
+	padding: 5px;
+}
+.day {
+	background: #A0EFEC;
+}
+.night {
+	background: #27263E;
+	color: white;
+}
+.rest {
+	background: #FFFE82;
+}
+
+
+
+.number {
+	display: block;
+	font-size: 30px;
+	text-align: center;
+}
