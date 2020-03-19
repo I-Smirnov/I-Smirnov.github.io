@@ -1,6 +1,6 @@
 
 table {
-	background: #FFEBF5;
+	background: linear-gradient(45deg, #9bc8ffe3, #868686);
 	margin: 0 auto;
 }
 thead td {
@@ -11,22 +11,122 @@ thead td {
 td {
 	width: 100px;
 	padding: 5px;
+	box-shadow: 4px 4px 3px rgb(208, 208, 208);
 }
 .day {
-	background: #A0EFEC;
+	background: hsla(180, 71%, 78%, 0.23);
 }
 .night {
-	background: #27263E;
-	color: white;
+	background: #c9c9d0;
+	/* color: white; */
 }
 .rest {
-	background: #FFFE82;
+	background: #fffe8285;
 }
-
-
-
 .number {
 	display: block;
 	font-size: 30px;
 	text-align: center;
+	/* text-shadow: 0 1px rgba(202, 201, 201, 0.8); */
+	/* box-shadow: 18px 6px 8px rgba(239, 1, 1, 0.05); */
+}
+.text {
+	display: block;
+	/* font-size: 20px; */
+	color: #636362;
+}
+
+.month {
+	text-decoration: none;
+	font-size: 42px;
+	display: inline-block;
+	margin: 10px;
+	color: burlywood;
+	position: relative;
+	transition: .4s;
+}
+
+.month:before {
+	content: '';
+	top: 0;
+	position: absolute;
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #673AB7;
+	transition: 0.4s;
+	transform-origin: left;
+	transform: scale(0, 0);
+}
+.month:after {
+	content: '';
+	bottom: 0;
+	position: absolute;
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #2196F3;
+	transition: 0.4s;
+	transform-origin: right;
+	transform: scale(0, 0);
+}
+.month:hover span {
+	color: #90A5B0;
+}
+
+
+.month span {
+	text-decoration: none;
+	font-size: 42px;
+	display: inline-block;
+	margin: 10px;
+	color: burlywood;
+	position: relative;
+	transition: .4s;
+}
+
+.month span:before {
+	content: '';
+	left: -10px;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 1px;
+	background: #673AB7;
+	transition: 0.4s;
+	transform-origin: bottom;
+	transform: scale(0, 0);
+}
+.month span:after {
+	content: '';
+	right: -10px;
+	top: 0;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 1px;
+	background: #2196F3;
+	transition: 0.4s;
+	transform-origin: top;
+	transform: scale(0, 0);
+}
+
+
+.month:hover:before {
+	transform: scale(1, 1);
+	transform-origin: right;
+}
+.month:hover:after {
+	transform: scale(1, 1);
+	transform-origin: left;
+}
+
+
+.month:hover span:before {
+	transform: scale(1, 1);
+	transform-origin: top;
+}
+.month:hover span:after {
+	transform: scale(1, 1);
+	transform-origin: bottom;
 }
