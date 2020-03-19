@@ -1,6 +1,6 @@
 
 table {
-	background: linear-gradient(45deg, #9bc8ffe3, #868686);
+	background: radial-gradient(#4b82c5e3, #797070);
 	margin: 0 auto;
 }
 thead td {
@@ -12,6 +12,12 @@ td {
 	width: 100px;
 	padding: 5px;
 	box-shadow: 4px 4px 3px rgb(208, 208, 208);
+	transition: .4s;
+}
+td:hover {
+	/* background-color: #48486f; */
+	filter: brightness(0.5);
+	transform: scale(1.05);
 }
 .day {
 	background: hsla(180, 71%, 78%, 0.23);
