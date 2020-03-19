@@ -1,4 +1,6 @@
-
+body {
+	background-image: url('../images/fon.jpg');
+}
 table {
 	background: radial-gradient(#4b82c5e3, #797070);
 	margin: 0 auto;
