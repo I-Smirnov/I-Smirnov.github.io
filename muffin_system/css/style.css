@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: url('../image/milky_way.webp');
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 1500px;
+}
+audio {
+  position: absolute;
+  top: -10px;
+  right: -250px;
+  transition: 1s;
+  opacity: .2;
+}
+audio:hover {
+  opacity: 1;
+}
+
+
+.wrap {
+  background: url('../image/keks1.png') no-repeat;
+  background-position: center 48%;
+  background-size: 100px;
+  width: 800px;
+  position: relative;
+  animation: pulse_1 10s linear infinite;
+  z-index: 100;
+  height: 800px;
+}
+.item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+/*  background-color: #ccc; */
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 50%;
+  transform-origin: left center;
+}
+.item1 {
+  width: 150px;
+  background-image: url('../image/hedgehog1.png');
+  animation: rotate_1 10s linear infinite, opacity_1 15s linear infinite;
+}
+.item2 {
+  width: 200px;
+  background-image: url('../image/homochkinblue.webp');
+  animation: rotate_1 15s ease infinite;
+}
+.item3 {
+  width: 310px;
+  background-image: url('../image/elifant.png');
+  animation: rotate_1 20s ease-in infinite;
+}
+.item4 {
+  width: 400px;
+  background-image: url('../image/ass1.png');
+  animation: rotate_2 20s ease-out infinite, opacity_1 25s steps(5) infinite;
+}
+.item5 {
+  width: 450px;
+  background-image: url('../image/duck.png');
+  animation: rotate_2 22s ease-in-out infinite, opacity_1 15s linear infinite;
+}
+.item6 {
+  width: 500px;
+  background-image: url('../image/squirrel.png');
+  animation: rotate_2 37s steps(20) infinite;
+}
+.item7 {
+  width: 550px;
+  background-image: url('../image/squirtle.png');
+  animation: rotate_2 25s linear infinite;
+}
+.item8 {
+  width: 600px;
+  background-image: url('../image/rocket.png');
+  animation: rotate_2 54s linear infinite;
+}
+.item9 {
+  width: 340px;
+  background-image: url('../image/mouse.png');
+  animation: rotate_2 15s linear infinite;
+}
+.point{
+  opacity: 0.2;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  border-radius: 50%;
+}
+
+@keyframes rotate_1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse_1 {
+  from, to {
+    background-size: 100px;
+  }
+  50% {
+    background-size: 130px;
+  }
+}
+
+@keyframes opacity_1 {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
