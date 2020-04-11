@@ -22,10 +22,11 @@ td:hover {
 	transform: scale(1.05);
 }
 .day {
-	background: hsla(180, 71%, 78%, 0.23);
+	background: #c9c9d0;
+	#c9c9d0
 }
 .night {
-	background: #c9c9d0;
+	background: hsla(180, 71%, 78%, 0.23);
 	/* color: white; */
 }
 .rest {

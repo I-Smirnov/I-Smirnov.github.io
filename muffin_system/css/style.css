@@ -74,7 +74,7 @@ audio:hover {
 .item6 {
   width: 500px;
   background-image: url('../image/squirrel.png');
-  animation: rotate_2 37s steps(20) infinite;
+  animation: rotate_2 37s steps(1000) infinite;
 }
 .item7 {
   width: 550px;
@@ -90,6 +90,11 @@ audio:hover {
   width: 340px;
   background-image: url('../image/mouse.png');
   animation: rotate_2 15s linear infinite;
+}
+.item10 {
+  width: 370px;
+  background-image: url('../image/snail.png');
+  animation: rotate_2 17s linear infinite;
 }
 .point{
   opacity: 0.2;
@@ -128,7 +133,7 @@ audio:hover {
     opacity: 1;
   }
   50% {
-    opacity: 0;
+    opacity: .3;
   }
 }
 
